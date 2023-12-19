@@ -26,21 +26,21 @@
           "foundSignupDate": ""
         }
       ],
-      "url": "http://127.0.0.1:8080/execute"
+      "url": "https://127.0.0.1:8080/execute"
     }
   },
   "configurationArguments": {
     "save": {
-      "url": "http://127.0.0.1:8080/save"
+      "url": "https://127.0.0.1:8080/save"
     },
     "publish": {
-      "url": "http://127.0.0.1:8080/publish"
+      "url": "https://127.0.0.1:8080/publish"
     },
     "validate": {
-      "url": "http://127.0.0.1:8080/validate"
+      "url": "https://127.0.0.1:8080/validate"
     },
     "stop": {
-      "url": "http://127.0.0.1:8080/stop"
+      "url": "https://127.0.0.1:8080/stop"
     }
   },
   "wizardSteps": [
