@@ -1,4 +1,4 @@
-define(["js/postmonger.js"], function (Postmonger) {
+define(["js/postmonger"], function (Postmonger) {
     "use strict";
 
     console.log(Postmonger)
