@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<button type="button" onclick="submit()">전송</button>
+<script>
+    // POST 요청을 보낼 URL
+    const postUrl = 'http://127.0.0.1:8080/save';
+
+    // POST 요청에 사용할 데이터
+    const postData = {
+        title: 'sdsd',
+        firstName: '데2',
+        lastName: '송',
+        body: 'bar21',
+        userId: 2
+    };
+
+    // fetch 함수를 사용하여 POST 요청 보내기
+    function submit (){
+        fetch(postUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(postData)
+            })
+            .then(response => response.text())  // 변경된 부분
+            .then(data => {
+                    console.log('POST 요청 결과:', data);
+                })
+            .catch( error => {
+                console.error('POST 요청 중 오류 발생:', error);
+            });
+    }
+</script>
+</body>
+</html>
